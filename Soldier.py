@@ -67,7 +67,7 @@ class Soldier:
                 target = soldier
                 closestDistance = distance
 
-        if closestDistance == 0 or target == self or closestDistance < 10:
+        if closestDistance == 0 or target == self: # I modified this line, it used to be 'if closestDistance == 0 or target == self or closestDistance < 10:'
             self.velocity = [0,0]
             return False
 
